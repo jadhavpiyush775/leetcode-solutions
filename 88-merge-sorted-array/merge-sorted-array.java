@@ -5,23 +5,8 @@ class Solution {
             nums1[i]=nums2[j];
             j++;
         }
-       for(int i=0;i<nums1.length;i++){
-        boolean swap=false;
-        for(int k=1;k<=nums1.length-1;k++){
-            if(nums1[k-1]>nums1[k]){
-                int temp=nums1[k-1];
-                nums1[k-1]=nums1[k];
-                nums1[k]=temp;
-                swap=true;
-
-            }
-
-        }
-        if(!swap){
-            break;
-        }
+      Arrays.sort(nums1);
        }
        
     }
     
-}

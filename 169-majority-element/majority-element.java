@@ -16,17 +16,6 @@ class Solution {
                 break;
             }
         }
-        int i=0;
-
-            for(int j=0;j<n;j++){
-                 if(nums[i]==nums[j]){
-                    count++;
-                 }
-            
-            if(count>n/2){
-                return nums[i];
-            }i=j;}
-        
-        return 0;
+       return nums[n/2];
     }
 }

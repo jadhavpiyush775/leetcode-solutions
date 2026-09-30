@@ -5,5 +5,6 @@ class Solution {
             ans[i]=ans[i>>1]+(i&1);
         }
         return ans;
+
     }
 }
